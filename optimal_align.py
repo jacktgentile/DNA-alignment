@@ -26,6 +26,9 @@ def load_submatrix(filename):
         result.append(templist)
     return result
 
+# calculate optimal alignment of 2 sequences
+def align(sequence1, sequence2, submatrix, gapPenalty):
+    return 0
 
 # main function
 if __name__ == "__main__":
@@ -33,7 +36,7 @@ if __name__ == "__main__":
     fastafilename1 = sys.argv[1]
     fastafilename2 = sys.argv[2]
     submatrixfile = sys.argv[3]
-    gapPenalty = sys.argv[4]
+    gapPenalty = int(sys.argv[4])
     # assign values from file contents
     sequence1 = load_sequence(fastafilename1)
     sequence2 = load_sequence(fastafilename2)
