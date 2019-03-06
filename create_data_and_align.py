@@ -56,4 +56,4 @@ if __name__ == "__main__":
     write_sequence_to_file(origin_seq, "seq1.fasta", "unmutated sequence")
     write_sequence_to_file(seq2, "seq2.fasta", "mutated sequence 1")
     write_sequence_to_file(seq3, "seq3.fasta", "mutated sequence 2")
-    align(seq2, seq3, submatrix, -5)
+    align(seq2, seq3, submatrix, -50)

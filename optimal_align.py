@@ -75,7 +75,7 @@ def align(sequence1, sequence2, submatrix, gapPenalty):
         for i in range(width-1, curx, -1):
             modseq1.append(sequence1[i])
             modseq2.append("-")
-    elif cury < height-1:
+    if cury < height-1:
         for i in range(cury+1, height):
             modseq1.append("-")
             modseq2.append(sequence2[i])
@@ -100,7 +100,7 @@ def align(sequence1, sequence2, submatrix, gapPenalty):
         for i in range(curx, -1, -1):
             modseq1.append(sequence1[i])
             modseq2.append("-")
-    elif cury >= 0:
+    if cury >= 0:
         for i in range(cury, -1, -1):
             modseq1.append("-")
             modseq2.append(sequence2[i])
